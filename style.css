@@ -11,3 +11,42 @@ header nav {
     justify-content: center;
     height: 200px;
 }
+
+.description {
+    width: 50%;
+    border: 3px solid orange;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carousel {
+    /* background: #FAFAFA; */
+    background: #11191f;
+  }
+  
+  .carousel-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: url(Gallery/20221022_092302.jpg);
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+  
+  /* gallery focus */
+  .flickity-enabled:focus .flickity-viewport {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
